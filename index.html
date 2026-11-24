@@ -18,7 +18,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Maxilimp Tapeçaria",
-    "telephone": "+55[NÚMERO]",
+    "telephone": "+5511930901826",
     "areaServed": {"@type": "City", "name": "[CIDADE]"},
     "address": {"@type": "PostalAddress", "addressLocality": "[CIDADE]", "addressCountry": "BR"},
     "openingHours": "[HORÁRIO]",
@@ -33,24 +33,35 @@
     <nav class="navigation" id="navigation" aria-label="Navegação principal">
       <a href="#servicos">Serviços</a><a href="#antes-depois">Antes e depois</a><a href="#processo">Como funciona</a><a href="#sobre">Sobre</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
     </nav>
-    <a class="button button-header whatsapp-link" data-message="Olá! Quero pedir um orçamento para um estofado." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20para%20um%20estofado.">Orçamento no WhatsApp <span aria-hidden="true">↗</span></a>
+    <a class="button button-header whatsapp-link" data-message="Olá! Quero pedir um orçamento para um estofado." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20para%20um%20estofado.">Orçamento no WhatsApp <span aria-hidden="true">↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-copy">
-     
-        <h1>Tem história no estofado.<br><span>A gente cuida do resto.</span></h1>
+        <h1>Seu estofado<br>de cara nova.<br><span>Seu espaço também.</span></h1>
         <p class="hero-lead">Reformamos, lavamos e protegemos sofás e outros estofados para você continuar usando o que gosta, com conforto de novo.</p>
-        <a class="button whatsapp-link" data-message="Olá! Quero conversar sobre a reforma ou limpeza de um estofado." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20a%20reforma%20ou%20limpeza%20de%20um%20estofado.">Pedir orçamento <span aria-hidden="true">↗</span></a>
-       
+        <div class="hero-actions">
+          <a class="button whatsapp-link" data-message="Olá! Quero conversar sobre a reforma ou limpeza de um estofado." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20a%20reforma%20ou%20limpeza%20de%20um%20estofado.">Pedir orçamento <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#servicos">Conheça nossos serviços <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="hero-highlights" aria-label="Diferenciais da Maxilimp">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 4.5-3 7.6-7 10-4-2.4-7-5.5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg><span>Equipe experiente</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.45 8.45 0 0 1-12.5 7.4L3 20.5l1.3-4.8a8.45 8.45 0 1 1 16.2-3.9Z"/><path d="M8.5 9.2c.8 2.7 2.6 4.5 5.3 5.3"/></svg><span>Orçamento no WhatsApp</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 14.5 9l6 .7-4.4 4.1 1.2 5.9-5.3-3-5.3 3 1.2-5.9-4.4-4.1 6-.7L12 3.5Z"/></svg><span>Cuidado em cada etapa</span></li>
+        </ul>
       </div>
-      <div class="hero-photo photo-placeholder" role="img" aria-label="Foto de um estofado renovado pela Maxilimp, imagem a inserir">
+      <div class="hero-photo photo-placeholder">
+        <img class="hero-image" src="assets/sofa-inicio.jpeg" alt="Sofá de dois lugares em tecido marrom, fotografado após o serviço da Maxilimp" width="1599" height="899" fetchpriority="high" decoding="async">
         <div class="photo-note"><span class="sparkle" aria-hidden="true"></span><span>Uma peça bem cuidada<br><strong>muda o dia a dia.</strong></span></div>
-        <span class="photo-credit">[FOTO REAL DE SOFÁ REFORMADO]</span>
+    
         <span class="sparkle brand-sparkle" aria-hidden="true"></span><img class="brand-mark" src="assets/maxilimp-icone.png" alt="" width="1240" height="1240">
       </div>
     </section>
+
+    <div class="service-marquee" aria-label="Serviços da Maxilimp" data-speed="normal" data-direction="left">
+      <div class="service-marquee-track"><div class="service-marquee-group"><span>Reforma</span><i></i><span>Conserto</span><i></i><span>Lavagem</span><i></i><span>Impermeabilização</span><i></i></div><div class="service-marquee-group" aria-hidden="true"><span>Reforma</span><i></i><span>Conserto</span><i></i><span>Lavagem</span><i></i><span>Impermeabilização</span><i></i></div></div>
+    </div>
 
     <section class="services section-pad" id="servicos">
       <div class="section-intro"><p class="eyebrow"><span class="eyebrow-mark"></span> O QUE FAZEMOS</p><h2>Cada peça pede<br>um cuidado diferente.</h2><p>Você conta o que aconteceu. A gente avalia o tecido, o uso e o tipo de serviço que faz sentido.</p></div>
@@ -60,33 +71,54 @@
         <a class="service-row" href="#contato"><span class="service-number">03</span><span class="service-name">Lavagem e higienização</span><span class="service-detail">Para sofás, colchões, tapetes e bancos de carro.</span><span class="service-arrow" aria-hidden="true">↗</span></a>
         <a class="service-row" href="#contato"><span class="service-number">04</span><span class="service-name">Impermeabilização</span><span class="service-detail">Proteção do tecido conforme avaliação da peça.</span><span class="service-arrow" aria-hidden="true">↗</span></a>
       </div>
-      <div class="service-aside"><span class="aside-rule"></span><p>Cheiro, manchas ou desgaste?<br><strong>Explique pra gente pelo WhatsApp.</strong></p><a class="text-link whatsapp-link" data-message="Olá! Quero saber qual serviço é indicado para minha peça." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20saber%20qual%20servi%C3%A7o%20%C3%A9%20indicado%20para%20minha%20pe%C3%A7a.">Converse com a equipe <span aria-hidden="true">↗</span></a></div>
+      <div class="service-aside"><span class="aside-rule"></span><p>Cheiro, manchas ou desgaste?<br><strong>Explique pra gente pelo WhatsApp.</strong></p><a class="text-link whatsapp-link" data-message="Olá! Quero saber qual serviço é indicado para minha peça." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20saber%20qual%20servi%C3%A7o%20%C3%A9%20indicado%20para%20minha%20pe%C3%A7a.">Converse com a equipe <span aria-hidden="true">↗</span></a></div>
     </section>
 
     <section class="comparison section-pad" id="antes-depois">
       <div class="comparison-head"><div><p class="eyebrow"><span class="eyebrow-mark"></span> ANTES E DEPOIS</p><h2>Veja a diferença<br>no mesmo estofado.</h2></div><p>Arraste o controle para comparar as fotos. Envie suas imagens de antes e depois para substituir os espaços.</p></div>
       <div class="compare" style="--split:50%">
-        <div class="compare-image compare-before"><span>[FOTO ANTES]</span><small>ANTES</small></div>
-        <div class="compare-image compare-after"><span>[FOTO DEPOIS]</span><small>DEPOIS</small></div>
+        <div class="compare-image compare-before"><img src="assets/sofa-antes.jpeg" alt="Sofá antes do serviço de reforma" width="1367" height="768" loading="lazy" decoding="async"><small>ANTES</small></div>
+        <div class="compare-image compare-after"><img src="assets/sofa-depois.jpeg" alt="O mesmo sofá depois do serviço de reforma" width="1599" height="899" loading="lazy" decoding="async"><small>DEPOIS</small></div>
         <div class="compare-divider" aria-hidden="true"><span>↔</span></div>
         <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Arraste para comparar o antes e o depois">
       </div>
-      <p class="compare-caption">[IDENTIFIQUE O SERVIÇO OU A PEÇA DA FOTO]</p>
+      <p class="compare-caption">Sofá reformado pela equipe Maxilimp</p>
+      <button class="compare-open" type="button" aria-haspopup="dialog" aria-controls="compare-dialog"><span aria-hidden="true">⤢</span> Ampliar comparação</button>
     </section>
 
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-dialog-title">
+      <div class="compare-dialog-surface">
+        <div class="compare-dialog-heading"><div><p class="eyebrow"><span class="eyebrow-mark"></span> TRABALHO MAXILIMP</p><h2 id="compare-dialog-title">Sofá: antes e depois</h2></div><button class="compare-close" type="button" aria-label="Fechar comparação">×</button></div>
+        <div class="compare compare-expanded" style="--split:50%">
+          <div class="compare-image compare-before"><img src="assets/sofa-antes.jpeg" alt="Sofá antes do serviço de reforma" width="1367" height="768" loading="lazy" decoding="async"><small>ANTES</small></div>
+          <div class="compare-image compare-after"><img src="assets/sofa-depois.jpeg" alt="O mesmo sofá depois do serviço de reforma" width="1599" height="899" loading="lazy" decoding="async"><small>DEPOIS</small></div>
+          <div class="compare-divider" aria-hidden="true"><span>↔</span></div>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Arraste para comparar o antes e o depois">
+        </div>
+      </div>
+    </dialog>
+
     <section class="process section-pad" id="processo">
-      <div class="process-title"><p class="eyebrow"><span class="eyebrow-mark"></span> COMO FUNCIONA</p><h2>Combinado<br>desde o começo.</h2><a class="button whatsapp-link" data-message="Olá! Quero pedir um orçamento para retirada e entrega de uma peça." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20para%20retirada%20e%20entrega%20de%20uma%20pe%C3%A7a.">Consultar pelo WhatsApp <span aria-hidden="true">↗</span></a></div>
+      <div class="process-title"><p class="eyebrow"><span class="eyebrow-mark"></span> COMO FUNCIONA</p><h2>Combinado<br>desde o começo.</h2><a class="button whatsapp-link" data-message="Olá! Quero pedir um orçamento para retirada e entrega de uma peça." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20para%20retirada%20e%20entrega%20de%20uma%20pe%C3%A7a.">Consultar pelo WhatsApp <span aria-hidden="true">↗</span></a></div>
       <ol class="process-steps"><li><span>01</span><div><h3>Orçamento</h3><p>Mande fotos, conte o que precisa e informe as medidas, se tiver. A avaliação é [PRESENCIAL/PELAS FOTOS].</p></div></li><li><span>02</span><div><h3>Retirada</h3><p>Combinamos endereço, data e valor da retirada: [DETALHES DA RETIRADA].</p></div></li><li><span>03</span><div><h3>Serviço</h3><p>Fazemos o trabalho aprovado e avisamos se houver alguma mudança no prazo combinado: [PRAZO].</p></div></li><li><span>04</span><div><h3>Entrega</h3><p>Devolvemos a peça em [PRAZO DE ENTREGA]. Garantia do serviço: [GARANTIA].</p></div></li></ol>
     </section>
 
     <section class="about section-pad" id="sobre">
-      <div class="about-image photo-placeholder" role="img" aria-label="Foto dos profissionais da Maxilimp, imagem a inserir"><span>[FOTO DA EQUIPE OU DO TRABALHO]</span><img src="assets/maxilimp-logo-escuro.png" alt="Logo Maxilimp Tapeçaria" width="1760" height="1240" loading="lazy"></div>
-      <div class="about-copy"><p class="eyebrow"><span class="eyebrow-mark"></span> SOBRE A MAXILIMP</p><h2>Experiência de oficina.<br>Conversa sem enrolação.</h2><p>A Maxilimp é uma tapeçaria de [CIDADE]. Nossos profissionais experientes cuidam de reforma, conserto e limpeza de estofados com atenção ao tecido, ao acabamento e ao uso de cada peça.</p><p>Antes de começar, explicamos o serviço, o prazo e a garantia. Assim você sabe o que será feito e pode decidir com tranquilidade.</p><p class="about-facts">Atendemos [BAIRROS E REGIÃO] <span>·</span> Desde [ANO DE INÍCIO]</p><a class="text-link whatsapp-link" data-message="Olá! Quero conhecer melhor os serviços da Maxilimp." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20Maxilimp.">Fale com a Maxilimp <span aria-hidden="true">↗</span></a></div>
+      <div class="about-image photo-placeholder"><img class="team-photo" src="assets/equipe.jpg" alt="Os dois profissionais da equipe Maxilimp, usando camisetas da empresa" width="1448" height="1086" loading="lazy" decoding="async"></div>
+      <div class="about-copy"><p class="eyebrow"><span class="eyebrow-mark"></span> SOBRE A MAXILIMP</p><h2>Experiência de oficina.<br>Conversa sem enrolação.</h2><p>A Maxilimp é uma tapeçaria de [CIDADE]. Nossos profissionais experientes cuidam de reforma, conserto e limpeza de estofados com atenção ao tecido, ao acabamento e ao uso de cada peça.</p><p>Antes de começar, explicamos o serviço, o prazo e a garantia. Assim você sabe o que será feito e pode decidir com tranquilidade.</p><p class="about-facts">Atendemos [BAIRROS E REGIÃO] <span>·</span> Desde [ANO DE INÍCIO]</p><a class="text-link whatsapp-link" data-message="Olá! Quero conhecer melhor os serviços da Maxilimp." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20Maxilimp.">Fale com a Maxilimp <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="testimonials section-pad" id="depoimentos"><div class="testimonial-title"><p class="eyebrow"><span class="eyebrow-mark"></span> QUEM JÁ FEZ COM A GENTE</p><h2>Palavra de cliente.</h2><p>Inclua aqui avaliações reais, com autorização dos clientes.</p></div><blockquote><span class="quote-mark" aria-hidden="true">“</span><p>[DEPOIMENTO REAL DE CLIENTE]</p><footer>[NOME DO CLIENTE] · [SERVIÇO REALIZADO]</footer></blockquote><a class="text-link whatsapp-link" data-message="Olá! Gostaria de falar com a Maxilimp." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20Maxilimp.">Tire sua dúvida com a equipe <span aria-hidden="true">↗</span></a></section>
+    <section class="testimonials section-pad" id="depoimentos">
+      <div class="testimonial-title"><p class="eyebrow"><span class="eyebrow-mark"></span> QUEM JÁ FEZ COM A GENTE</p><h2>Palavra de cliente.</h2><p>Avaliações de quem confiou à Maxilimp a reforma do sofá.</p></div>
+      <div class="review-gallery" aria-label="Capturas das avaliações de clientes">
+        <figure class="review-shot"><a href="assets/avaliacao1.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir avaliação de Tatiana Vanessa Ribeiro em tamanho original"><img src="assets/avaliacao1.jpeg" alt="Captura da avaliação de cinco estrelas de Tatiana Vanessa Ribeiro sobre a reforma do sofá" width="1170" height="660" loading="lazy" decoding="async"></a><figcaption><span>01</span> Tatiana Vanessa Ribeiro <span class="review-shot-stars" aria-label="5 estrelas">★★★★★</span></figcaption></figure>
+        <figure class="review-shot"><a href="assets/avaliacao2.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir avaliação de Adriana Amorim em tamanho original"><img src="assets/avaliacao2.jpeg" alt="Captura da avaliação de cinco estrelas de Adriana Amorim, com fotos do sofá antes e depois" width="1170" height="1350" loading="lazy" decoding="async"></a><figcaption><span>02</span> Adriana Amorim <span class="review-shot-stars" aria-label="5 estrelas">★★★★★</span></figcaption></figure>
+        <figure class="review-shot"><a href="assets/avaliacao3.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Abrir avaliação de Karin Heijden em tamanho original"><img src="assets/avaliacao3.jpeg" alt="Captura da avaliação de cinco estrelas de Karin Heijden sobre a reforma do sofá" width="1170" height="1600" loading="lazy" decoding="async"></a><figcaption><span>03</span> Karin Heijden <span class="review-shot-stars" aria-label="5 estrelas">★★★★★</span></figcaption></figure>
+      </div>
+      <a class="text-link whatsapp-link" data-message="Olá! Gostaria de falar com a Maxilimp." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20a%20Maxilimp.">Tire sua dúvida com a equipe <span aria-hidden="true">↗</span></a>
+    </section>
 
-    <section class="faq section-pad" id="duvidas"><div class="faq-intro"><p class="eyebrow"><span class="eyebrow-mark"></span> PERGUNTAS FREQUENTES</p><h2>O que você precisa<br>saber antes.</h2><a class="text-link whatsapp-link" data-message="Olá! Tenho uma dúvida sobre um serviço de tapeçaria." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20um%20servi%C3%A7o%20de%20tape%C3%A7aria.">Pergunte pelo WhatsApp <span aria-hidden="true">↗</span></a></div><div class="faq-list">
+    <section class="faq section-pad" id="duvidas"><div class="faq-intro"><p class="eyebrow"><span class="eyebrow-mark"></span> PERGUNTAS FREQUENTES</p><h2>O que você precisa<br>saber antes.</h2><a class="text-link whatsapp-link" data-message="Olá! Tenho uma dúvida sobre um serviço de tapeçaria." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20um%20servi%C3%A7o%20de%20tape%C3%A7aria.">Pergunte pelo WhatsApp <span aria-hidden="true">↗</span></a></div><div class="faq-list">
         <details><summary>A lavagem tira manchas e cheiro? <span>+</span></summary><p>O resultado depende do tecido, do tipo de mancha e de há quanto tempo ela está na peça. Para avaliarmos, envie fotos e conte sobre o cheiro ou a mancha. [INFORME LIMITES E PRODUTOS UTILIZADOS]</p></details>
         <details><summary>Quanto tempo demora o serviço? <span>+</span></summary><p>O prazo depende do serviço e da agenda. Para este tipo de peça, a previsão é [PRAZO].</p></details>
         <details><summary>Vocês retiram e entregam o estofado? <span>+</span></summary><p>Atendemos [REGIÃO DE RETIRADA E ENTREGA]. O custo é [VALOR OU REGRA DE COBRANÇA].</p></details>
@@ -94,11 +126,11 @@
         <details><summary>Como peço um orçamento? <span>+</span></summary><p>Chame no WhatsApp com fotos da peça, seu bairro e o serviço que procura. A equipe retorna em [PRAZO DE RESPOSTA].</p></details>
       </div></section>
 
-    <section class="contact section-pad" id="contato"><div class="contact-copy"><p class="eyebrow"><span class="eyebrow-mark"></span> FALE COM A MAXILIMP</p><h2>Conte o que aconteceu<br>com a sua peça.</h2><p>Se tem mancha, cheiro, tecido gasto ou uma ideia para reformar, mande uma mensagem. A gente orienta você.</p><a class="button whatsapp-link" data-message="Olá! Quero pedir um orçamento. Meu bairro é [BAIRRO] e o serviço que procuro é [SERVIÇO]." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento.%20Meu%20bairro%20%C3%A9%20%5BBAIRRO%5D%20e%20o%20servi%C3%A7o%20que%20procuro%20%C3%A9%20%5BSERVI%C3%87O%5D.">Chamar no WhatsApp <span aria-hidden="true">↗</span></a><div class="contact-details"><p><strong>Telefone</strong><br>[NÚMERO]</p><p><strong>Horário</strong><br>[HORÁRIO DE ATENDIMENTO]</p><p><strong>Atendimento</strong><br>[ENDEREÇO OU REGIÃO]</p></div></div><div class="map-frame"><iframe title="Mapa de atendimento da Maxilimp em [CIDADE]" src="https://maps.google.com/maps?q=%5BCIDADE%5D&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Localização: [ENDEREÇO OU CIDADE]</span></div></section>
+    <section class="contact section-pad" id="contato"><div class="contact-copy"><p class="eyebrow"><span class="eyebrow-mark"></span> FALE COM A MAXILIMP</p><h2>Conte o que aconteceu<br>com a sua peça.</h2><p>Se tem mancha, cheiro, tecido gasto ou uma ideia para reformar, mande uma mensagem. A gente orienta você.</p><a class="button whatsapp-link" data-message="Olá! Quero pedir um orçamento. Meu bairro é [BAIRRO] e o serviço que procuro é [SERVIÇO]." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento.%20Meu%20bairro%20%C3%A9%20%5BBAIRRO%5D%20e%20o%20servi%C3%A7o%20que%20procuro%20%C3%A9%20%5BSERVI%C3%87O%5D.">Chamar no WhatsApp <span aria-hidden="true">↗</span></a><div class="contact-details"><p><strong>Telefone</strong><br>(11) 93090-1826</p><p><strong>Horário</strong><br>[HORÁRIO DE ATENDIMENTO]</p><p><strong>Atendimento</strong><br>[ENDEREÇO OU REGIÃO]</p></div></div><div class="map-frame"><iframe title="Mapa de atendimento da Maxilimp em [CIDADE]" src="https://maps.google.com/maps?q=%5BCIDADE%5D&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Localização: [ENDEREÇO OU CIDADE]</span></div></section>
   </main>
 
   <footer class="site-footer"><a href="#inicio" class="footer-brand"><img src="assets/maxilimp-logo-claro.png" alt="Maxilimp Tapeçaria" width="1760" height="1240" loading="lazy"></a><p>Reforma, conserto e cuidado com estofados em [CIDADE].</p><a href="#contato">Contato</a><small>© <span id="year"></span> Maxilimp Tapeçaria</small></footer>
-  <a class="floating-whatsapp whatsapp-link" data-message="Olá! Quero pedir um orçamento com a Maxilimp." href="https://wa.me/55[NÚMERO]?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20com%20a%20Maxilimp." aria-label="Pedir orçamento à Maxilimp pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.45 8.45 0 0 1-12.5 7.4L3 20.5l1.3-4.8a8.45 8.45 0 1 1 16.2-3.9Z"/><path d="M9 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.3.2.5.2.7 0l.8-.9c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.8.7s-1.4-.2-2.4-.7c-1.2-.5-2.4-1.5-3.3-2.7-.9-1.1-1.5-2.4-1.6-3.1-.2-.8.1-1.5.5-1.8.4-.4.8-.5 1-.5Z"/></svg></a>
+  <a class="floating-whatsapp whatsapp-link" data-message="Olá! Quero pedir um orçamento com a Maxilimp." href="https://wa.me/5511930901826?text=Ol%C3%A1%21%20Quero%20pedir%20um%20or%C3%A7amento%20com%20a%20Maxilimp." aria-label="Pedir orçamento à Maxilimp pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.45 8.45 0 0 1-12.5 7.4L3 20.5l1.3-4.8a8.45 8.45 0 1 1 16.2-3.9Z"/><path d="M9 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.3.2.5.2.7 0l.8-.9c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.8.7s-1.4-.2-2.4-.7c-1.2-.5-2.4-1.5-3.3-2.7-.9-1.1-1.5-2.4-1.6-3.1-.2-.8.1-1.5.5-1.8.4-.4.8-.5 1-.5Z"/></svg></a>
   <script src="script.js" defer></script>
 </body>
 </html>

@@ -16,18 +16,38 @@ navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', 
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-const comparison = document.querySelector('.compare');
-const comparisonRange = document.querySelector('.compare-range');
-comparisonRange.addEventListener('input', () => {
-  comparison.style.setProperty('--split', `${comparisonRange.value}%`);
+const serviceMarquee = document.querySelector('.service-marquee');
+const marqueeGroup = serviceMarquee.querySelector('.service-marquee-group');
+const centerServiceMarquee = () => {
+  const offset = (serviceMarquee.clientWidth - marqueeGroup.getBoundingClientRect().width) / 2;
+  serviceMarquee.style.setProperty('--marquee-offset', `${offset}px`);
+};
+centerServiceMarquee();
+window.addEventListener('resize', centerServiceMarquee, { passive: true });
+
+document.querySelectorAll('.compare').forEach(comparison => {
+  const comparisonRange = comparison.querySelector('.compare-range');
+  comparisonRange.addEventListener('input', () => {
+    comparison.style.setProperty('--split', `${comparisonRange.value}%`);
+  });
 });
 
+const comparisonDialog = document.querySelector('.compare-dialog');
+const comparisonOpenButton = document.querySelector('.compare-open');
+const comparisonCloseButton = document.querySelector('.compare-close');
+comparisonOpenButton.addEventListener('click', () => comparisonDialog.showModal());
+comparisonCloseButton.addEventListener('click', () => comparisonDialog.close());
+comparisonDialog.addEventListener('click', event => {
+  if (event.target === comparisonDialog) comparisonDialog.close();
+});
+comparisonDialog.addEventListener('close', () => comparisonOpenButton.focus());
+
 const revealItems = document.querySelectorAll(
-  '.hero-copy, .hero-photo, .section-intro, .service-row, .service-aside, .comparison-head, .compare, .process-title, .process-steps li, .about-image, .about-copy, .testimonial-title, .testimonials blockquote, .faq-intro, .faq-list details, .contact-copy, .map-frame'
+  '.hero-copy, .hero-photo, .service-marquee, .section-intro, .service-row, .service-aside, .comparison-head, .compare, .compare-open, .process-title, .process-steps li, .about-image, .about-copy, .testimonial-title, .testimonials blockquote, .review-shot, .faq-intro, .faq-list details, .contact-copy, .map-frame'
 );
 revealItems.forEach(item => item.classList.add('reveal'));
 
-document.querySelectorAll('.service-list, .process-steps, .faq-list').forEach(list => {
+document.querySelectorAll('.service-list, .process-steps, .faq-list, .reviews-list, .review-gallery').forEach(list => {
   [...list.children].forEach((item, index) => item.style.setProperty('--delay', `${index * 75}ms`));
   list.classList.add('stagger');
 });
